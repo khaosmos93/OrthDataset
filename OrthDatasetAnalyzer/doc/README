@@ -1,0 +1,8 @@
+cmsrel CMSSW_8_0_28
+cd CMSSW_8_0_28/src
+cmsenv
+git clone git@github.com:khaosmos93/OrthDataset.git
+scram b -j8
+source /cvmfs/cms.cern.ch/crab3/crab.sh
+cd OrthDataset/OrthDatasetAnalyzer/test/Crab
+python crabSubmit.py Data submit
