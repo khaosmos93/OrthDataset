@@ -49,6 +49,8 @@ if __name__ == '__main__':
       command = 'crab status -d ' + di #+ ' --long'
     elif 'resubmit' in sys.argv:
       command = 'crab resubmit -d ' + di
+    elif 'getoutput' in sys.argv:
+      command = 'crab getoutput -d ' + di + ' --quantity=all'
     elif 'kill' in sys.argv:
       command = 'crab kill -d ' + di
 
